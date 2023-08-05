@@ -7,5 +7,30 @@
 <body>
     <h1>Hello There!</h1>
     <p>Welcome to my webpage!</p>
+      <input type="file" id="csvFileInput">
+  
+      <form id="frm1">
+        <br>
+        <label for="fname">Item Number:</label><br>
+        <input type="text" id="fname" name="fname" value="2113015909601" required><br><br>
+        <label for="lname">Case Difference:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="radio" id="addtionSel" name="select" value="add">
+        <label for="addtionSel">Adding Cases</label>
+        <input type="radio" id="subSel" name="select" value="sub">
+        <label for="subSel">Removing Cases</label>
+    
+    
+      </form>
+      <br>
+    
+      <button onclick="calAvg()">Average</button>
+      
+      <p id="test"></p>
+      <button onclick="totalCatch()">Total</button>
+      <p id="demo"></p>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+      <script src="scripts/cwScript.js"></script>
 </body>
 </html>
