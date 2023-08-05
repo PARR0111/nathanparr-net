@@ -1,0 +1,29 @@
+html {
+	background-color: #ffe6e6;
+}
+
+h3 {
+	/*border: 5px solid black;*/
+	font-family: Arial;
+	padding-left: 60px;
+	
+}
+
+.form-div {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bike-image {
+	background-color: #99ccff;
+	border: 2px solid white;
+	width: 420px;
+  	padding: 10px;
+  	margin: 0;
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
