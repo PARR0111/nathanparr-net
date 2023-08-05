@@ -1,37 +1,43 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles/styles.css" rel="stylesheet" />
-    <title>nathanparr</title>
+  <link href="styles/styles.css" rel="stylesheet" />
+  <title>CSV Parsing with Papa Parse</title>
 </head>
 <body>
+  <header id="myHead">
     <h1>Hello There!</h1>
     <p>Welcome to my webpage!</p>
-      <input type="file" id="csvFileInput">
+  </header>
+  <nav class="topnav">
+    <a href="#app">CW Cal</a>
+  </nav>
+
+  <section id="appFrame">
+  <input type="file" id="csvFileInput">
   
-      <form id="frm1">
-        <br>
-        <label for="fname">Item Number:</label><br>
-        <input type="text" id="fname" name="fname" value="2113015909601" required><br><br>
-        <label for="lname">Case Difference:</label><br>
-        <input type="text" id="lname" name="lname"><br><br>
-        <input type="radio" id="addtionSel" name="select" value="add">
-        <label for="addtionSel">Adding Cases</label>
-        <input type="radio" id="subSel" name="select" value="sub">
-        <label for="subSel">Removing Cases</label>
-    
-    
-      </form>
-      <br>
-    
-      <button onclick="calAvg()">Average</button>
-      
-      <p id="test"></p>
-      <button onclick="totalCatch()">Total</button>
-      <p id="demo"></p>
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
-      <script src="scripts/cwScript.js"></script>
+  <form id="frm1">
+    <br>
+    <label for="fname">Item Number:</label><br>
+    <input type="text" id="fname" name="fname" value="2113015909601" required><br><br>
+    <label for="lname">Case Difference:</label><br>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="radio" id="addtionSel" name="select" value="add">
+    <label for="addtionSel">Adding Cases</label>
+    <input type="radio" id="subSel" name="select" value="sub">
+    <label for="subSel">Removing Cases</label>
+
+
+  </form>
+  <br>
+
+  <button onclick="calAvg()">Average</button>
+  
+  <p id="test"></p>
+  <button onclick="totalCatch()">Total</button>
+  <p id="demo"></p>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <script src="scripts/cwScript.js"></script>
 </body>
 </html>
