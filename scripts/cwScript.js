@@ -17,6 +17,13 @@ let tempy = [];
 let avgWeight;
 
 
+function time() {
+  let now = new Date();
+  document.getElementById("time").innerHTML = now.toLocaleTimeString();
+}
+
+time();
+setInterval(time, 1000);
 function calAvg() {
     
     let targetItem = document.getElementById("frm1").elements[0].value;
