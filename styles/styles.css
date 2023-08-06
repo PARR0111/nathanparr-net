@@ -7,13 +7,18 @@ h3 {
 	
 }
 
+#time {
+	color: white;
+	font-family: Arial;
+}
+
 #myHead {
 	font-family: Arial;
 	color:aquamarine;
 }
 
 #appFrame {
-	background-color: rgb(245, 245, 245, .7);
+	background-color: rgba(240, 240, 240, 0.8);
 	width: fit-content;
 	font-family: Arial;
 	border: 5px solid white;
