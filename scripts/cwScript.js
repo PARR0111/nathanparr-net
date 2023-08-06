@@ -2,8 +2,8 @@ function frmTest1() {
     let x = document.getElementById("frm1").elements[0].value;
     let y = document.getElementById("frm1").elements[1].value;
     var text = "";
-    if (x.toLowerCase() === "adam" && y.toLowerCase() === "diilio") {
-    text = "Adam DiIlio is a Little Bitch.";
+    if (x.toLowerCase() === "adam") {
+    text = "Adam is a Little Bitch.";
     } else {
       text = "Welcome " + x + " " + y +"!";
     }
