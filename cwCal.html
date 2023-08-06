@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="styles/styles.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSV Parsing with Papa Parse</title>
+</head>
+<body>
+  <header id="myHead">
+    <h1>Catch Weight Calculator</h1>
+    <p>Simple Catch Weight Calculator for getting average item weights in kg. <br><br>
+      Select a file and then enter the total cases you are working with. <br>
+      Click average to get your average and total for total cacht weight. <br></p>
+  </header>
+  <nav class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="cwCal.html">CW Cal</a>
+  </nav>
+
+  <section id="appFrame">
+    <input type="file" id="csvFileInput">
+    
+    <form id="frm1">
+      <br>
+      <label for="fname">Item Number:</label><br>
+      <input type="text" id="fname" name="fname" value="2113015909601" required><br><br>
+      <label for="lname">Case Difference:</label><br>
+      <input type="text" id="lname" name="lname"><br><br>
+      <input type="radio" id="addtionSel" name="select" value="add">
+      <label for="addtionSel">Adding Cases</label>
+      <input type="radio" id="subSel" name="select" value="sub">
+      <label for="subSel">Removing Cases</label>
+
+
+    </form>
+    
+
+    <p id="test"><br></p>
+    <button onclick="calAvg()">Average</button>
+    
+    <p id="demo"><br></p>
+    <button onclick="totalCatch()">Total</button>
+
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <script src="scripts/cwScript.js"></script>
+</body>
+</html>
