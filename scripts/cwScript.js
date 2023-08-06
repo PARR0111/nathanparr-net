@@ -1,11 +1,11 @@
 function frmTest1() {
     let x = document.getElementById("frm1").elements[0].value;
     let y = document.getElementById("frm1").elements[1].value;
-    var text = (Number(x) + Number(y)) / 2;
-    if (Number.isNaN(text)){
-        text = "You entered " + x + " " + y;
-    } else if (text === 0) {
-        text = "Nothing"
+    var text = "";
+    if (x.toLowerCase() === "adam" && y.toLowerCase() === "diilio") {
+    text = "Adam DiIlio is a Little Bitch.";
+    } else {
+      text = "Welcome " + x + " " + y +"!";
     }
     document.getElementById("demo").innerHTML = text;
       
