@@ -56,7 +56,7 @@ function totalCatch(){
     console.log(totalCW);
 }
 
-document.getElementsByName
+
 
 document.getElementById("csvFileInput").addEventListener("change", handleFileSelect);
 
