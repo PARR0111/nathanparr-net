@@ -38,9 +38,8 @@ function calAvg() {
 
 
         avgWeight = (Number(minCatch) + Number(maxCatch)) / 2;
-
-        
-        document.getElementById("test").innerHTML = avgWeight;
+        avgWeight = Math.floor(avgWeight * 100) / 100;
+        document.getElementById("test").innerHTML = avgWeight.toFixed(3);
 
     } else {
         document.getElementById("test").innerHTML = "No File Seleceted";
@@ -55,7 +54,8 @@ function totalCatch(){
     let numCases = document.getElementById("lname").value;
     
     let totalCW = Number(numCases) * Number(avgWeight);
-    document.getElementById("demo").innerHTML = totalCW;
+    totalCW = Math.floor(totalCW * 100) / 100;
+    document.getElementById("demo").innerHTML = totalCW.toFixed(3);
     
     let currentCW = document.getElementById("currentCW").value;
     let currentCWnum = Number(currentCW);
