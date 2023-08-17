@@ -26,7 +26,7 @@ time();
 setInterval(time, 1000);
 function calAvg() {
     
-    let targetItem = document.getElementById("frm1").elements[0].value;
+    let targetItem = document.getElementById("fname").value;
     
     //test item number - '2113015909601';
     
@@ -40,7 +40,7 @@ function calAvg() {
         avgWeight = (Number(minCatch) + Number(maxCatch)) / 2;
 
         
-        document.getElementById("test").innerHTML = avgWeight + " kg";
+        document.getElementById("test").innerHTML = avgWeight;
 
     } else {
         document.getElementById("test").innerHTML = "No File Seleceted";
@@ -49,14 +49,37 @@ function calAvg() {
 }
 
 function totalCatch(){
-    let numCases = document.getElementById("frm1").elements[1].value;
 
+    
+    
+    let numCases = document.getElementById("lname").value;
+    
     let totalCW = Number(numCases) * Number(avgWeight);
-    document.getElementById("demo").innerHTML = totalCW + " kg";
+    document.getElementById("demo").innerHTML = totalCW;
+    
+    let currentCW = document.getElementById("currentCW").value;
+    let currentCWnum = Number(currentCW);
+
+    if (document.getElementById("addSel").checked) {
+      palletCW = currentCWnum + totalCW;
+      
+    } else if (document.getElementById("subSel").checked) {
+      palletCW = currentCWnum - totalCW;
+
+    } else {
+      palletCW = "Adding or Removing not checked.";
+    }
+
+    document.getElementById("paCW").innerHTML = palletCW;
+
+
     console.log(totalCW);
 }
 
-
+function runAll() {
+  calAvg();
+  totalCatch();
+}
 
 document.getElementById("csvFileInput").addEventListener("change", handleFileSelect);
 
