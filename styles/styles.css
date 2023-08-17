@@ -23,13 +23,45 @@ h3 {
 	font-family: Arial;
 	border: 5px solid white;
 	padding: 10px;
-	padding-right: 25px;
+	padding-right: 10px;
 }
 
 .form-div {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#resetBtn {
+	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #173b53; /* Green */
+	border: none;
+	color: white;
+	padding: 5px 20px;
+	text-align: center;
+	text-decoration: none;
+	/*display: inline-block;*/
+	font-size: 16px;
+	  
+}
+
+#findBtn {
+	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #173b53; /* Green */
+	border: none;
+	color: white;
+	padding: 10px 22px;
+	text-align: center;
+	text-decoration: none;
+	/*display: inline-block;*/
+	font-size: 16px;
+	  
 }
 
 .bike-image {
@@ -45,6 +77,14 @@ h3 {
 
 }
 
+#frm1 {
+	
+	padding:  10px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	background-color: #94a8a8;
+
+}
 
 
 html {
@@ -80,4 +120,13 @@ html {
   .topnav a.active {
 	background-color: #04AA6D;
 	color: white;
+  }
+
+  table, th, td {
+	/*
+	border: 1px solid black;
+	*/
+	border-collapse: collapse; 
+	padding: 6px;
+	
   }
