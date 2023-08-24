@@ -33,8 +33,10 @@ function calAvg() {
     if (tempy.length !== 0) {
         let item = tempy.find(obj => obj['Item Number'] === targetItem);
 
-        let minCatch = item['Maximum Catch Qty'];
-        let maxCatch = item['Minimum Catch Qty'];
+        let maxCatch = item['Maximum Catch Qty'];
+        let minCatch = item['Minimum Catch Qty'];
+        document.getElementById("minCW").innerHTML = minCatch;
+        document.getElementById("maxCW").innerHTML = maxCatch;
 
 
         avgWeight = (Number(minCatch) + Number(maxCatch)) / 2;
@@ -67,7 +69,8 @@ function totalCatch(){
       palletCW = currentCWnum - totalCW;
 
     } else {
-      palletCW = "Adding or Removing not checked.";
+      palletCW = "";
+      alert("Adding or Removing Cases not checked.");
     }
 
     document.getElementById("paCW").innerHTML = palletCW;
@@ -97,4 +100,14 @@ function handleFileSelect(event) {
     });
 
   }
+
+  function clearFields() {
+    document.getElementById("test").innerHTML = "";
+    document.getElementById("demo").innerHTML = "";
+    document.getElementById("paCW").innerHTML = "";
+  
+    document.getElementById("minCW").innerHTML = "";
+    document.getElementById("maxCW").innerHTML = "";
+  
+}
 
