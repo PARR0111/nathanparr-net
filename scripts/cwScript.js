@@ -3,7 +3,7 @@ function frmTest1() {
     let y = document.getElementById("frm1").elements[1].value;
     var text = "";
     if (x.toLowerCase() === "adam") {
-    text = "Adam is a Little Bitch.";
+    text = "Adam!";
     } else {
       text = "Welcome " + x + " " + y +"!";
     }
