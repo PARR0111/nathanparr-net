@@ -15,8 +15,7 @@
   </nav>
   <section id="myHead">
     <p>Simple Catch Weight Calculator for getting average item weights in kg. <br><br>
-      Select a file and then enter the total cases you are working with. <br>
-      Click average to get your average and total for total cacht weight. <br></p>
+      Select a file and then enter the total cases you are working with. <br><br></p>
   </section>
   <section id="appFrame">
     
@@ -27,7 +26,7 @@
       <table>
         
         <td colspan="3">
-          <button type="reset" id="resetBtn">Clear</button>
+          <button type="reset" id="resetBtn" onclick="clearFields()">Clear</button>
         </td>
         <tr>
           <td style="text-align: right;"><label for="fname">Item Number:</label></td>
@@ -41,37 +40,53 @@
           <td style="text-align: right;"><label for="currentCW">Current Pallet Weight:</label></td>
           <td><input type="text" id="currentCW" size="12" autocomplete="off" required></td>
         </tr>
-        <tr>
+
+        <tr style="border: 2px solid black;">
           <td>
             <input type="radio" id="addSel" name="select" value="add">
-            <label for="addSel">Adding Cases</label>
+            <label for="addSel" style="font-size: small;">Adding Cases</label>
           </td>
 
           <td>
             <input type="radio" id="subSel" name="select" value="sub">
-            <label for="subSel">Removing Cases</label>
+            <label for="subSel" style="font-size: small;">Removing Cases</label>
           </td>
           
         </tr>
+        
         <tr>
           <td></td>
         </tr>
         <tr>
+          <td style="text-align: right; ">
+            Min Catch:
+          </td>
+          <td id="minCW" style="border: 1px solid black; background-color: white;"></td>
+          <td class="unitKg" >kg</td>
+        </tr>
+        <tr>
+          <td style="text-align: right;">
+            Max Catch:
+          </td>
+          <td id="maxCW" style="border: 1px solid black; background-color: white;"></td>
+          <td class="unitKg" >kg</td>
+        </tr>
+        <tr>
           <td style="text-align: right;"><strong>Average CW:</strong></td>
-          <td id="test"></td>
-          <td style="text-align: left;">kg</td>
+          <td id="test" style="border: 1px solid black; background-color: white;"></td>
+          <td class="unitKg" >kg</td>
         </tr>
         <tr>
           <td style="text-align: right;"><strong>CW Difference:</strong></td>
-          <td id="demo"></td>
-          <td style="text-align: left;">kg</td>
+          <td id="demo" style="border: 1px solid black; background-color: white;"></td>
+          <td class="unitKg" >kg</td>
         </tr>
         <tr>
           <td style="text-align: right;"><strong>Pallet CW Total:</strong></td>
-          <td id="paCW"></td>
-          <td style="text-align: left;">kg</td>
+          <td id="paCW" style="border: 1px solid black; background-color: white;"></td>
+          <td class="unitKg" >kg</td>
         </tr>
-         
+        
       </table>
       
     </form>
