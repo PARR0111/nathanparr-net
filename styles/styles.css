@@ -1,26 +1,27 @@
 
 
-h3 {
-	/*border: 5px solid black;*/
-	font-family: Arial;
-	padding-left: 60px;
+
+
+#time {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	margin: 10px;
 	
 }
 
-#time {
-	color: white;
-	font-family: Arial;
-}
-
 #myHead {
-	font-family: Arial;
-	color:aquamarine;
+	
+	color:forestgreen;
 }
 
 #appFrame {
 	background-color: rgba(240, 240, 240, 0.8);
 	width: fit-content;
-	font-family: Arial;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	border: 5px solid white;
 	padding: 10px;
 	padding-right: 10px;
@@ -37,7 +38,7 @@ h3 {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #173b53; /* Green */
+	background-color: #173b53; 
 	border: none;
 	color: white;
 	padding: 5px 20px;
@@ -90,50 +91,59 @@ h3 {
 html {
 	background: url("../images/IMG_0049.jpg") no-repeat center fixed;
 	background-size: cover;
+	font-family: "Open Sans";
   }
+
+
+#profile_picture {
+	border-radius: 50%;
+	height: auto;
+	max-width: 100%;
+}
 
 
 /* Add a black background color to the top navigation */
 .topnav {
 	background-color: #333;
 	overflow: hidden;
-	font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-	float: left;
-	color: #f2f2f2;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-	background-color: #ddd;
-	color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-	background-color: #04AA6D;
-	color: white;
-  }
-
-  th, td {
-	/*
-	border: 1px solid black;
-	*/
-	border-collapse: collapse; 
-	padding: 6px;
-	border-radius: 8px;
 	
-	
-  }
+}
 
-  .unitKg {
-	font-size: small;
-	text-align: left;
-  }
+/* Style the links inside the navigation bar */
+.topnav a {
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+background-color: forestgreen;
+color: white;
+}
+
+th, td {
+/*
+border: 1px solid black;
+*/
+border-collapse: collapse; 
+padding: 6px;
+border-radius: 8px;
+
+
+}
+
+.unitKg {
+font-size: small;
+text-align: left;
+}
+
