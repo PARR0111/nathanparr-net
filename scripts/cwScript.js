@@ -84,7 +84,12 @@ function runAll() {
   totalCatch();
 }
 
-document.getElementById("csvFileInput").addEventListener("change", handleFileSelect);
+x = document.getElementById("csvFileInput")
+
+if (x !== undefined && x !== null) {
+  x.addEventListener("change", handleFileSelect);
+
+}
 
 //get CSV file data. 
 function handleFileSelect(event) {
