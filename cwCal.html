@@ -3,14 +3,15 @@
 <head>
   <link href="styles/styles.css" rel="stylesheet" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CW Calculator</title>
+  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+  <title style="display: flex; align-items: center; justify-content: center;">CW Calculator</title>
 </head>
 <body>
   <header id="myHead">
     <h1>Catch Weight Calculator</h1>
   </header>
   <nav class="topnav">
-    <a class="active" href="https://nathanparr.net/">Home</a>
+    <a class="active" href="https://nathanparr.net/">Bio</a>
     <a href="cwCal">CW Cal</a>
   </nav>
   <section id="myHead">
@@ -18,7 +19,7 @@
       Select a file and then enter the total cases you are working with. <br><br></p>
   </section>
   <section id="appFrame">
-    
+    <article>
     <h4>Select CW Inventory File:</h4>
     <input type="file" id="csvFileInput" style="padding-bottom: 25px;">
     
@@ -93,6 +94,7 @@
     <br>
     <button onclick="runAll()" id="findBtn">Calculate</button>
     <br>
+    </article>
   </section>
   <footer>
     <p id="time"></p>
