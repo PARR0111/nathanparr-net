@@ -1,52 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="styles/styles.css" rel="stylesheet" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles/styles.css" rel="stylesheet" />
+  <link href="styles/styles1.css" rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
   <title>Nate Website</title>
 </head>
 <body>
   <header id="myHead">
-    <h1>Hello There!</h1>
+    <h1 style="display: flex; align-items: center; justify-content: center;">Welcome</h1>
   </header>
   <nav class="topnav">
-    <a class="active" href="https://nathanparr.net">Home</a>
+    <a class="active" href="https://nathanparr.net">Bio</a>
     <a href="cwCal.html">CW Cal</a>
+    <a href="#">Dice</a>
+    <a href="#">Projects</a>
   </nav>
-  <section id="myHead">
-    <p>Welcome to my webpage!</p>
-  </section>section>
+    <section class="bio1">
 
-  <section id="appFrame">
-  
-  
-  <form id="frm1">
-    <br>
-    <label for="fname">First Name</label><br>
-    <input type="text" id="fname" name="fname"><br><br>
-    <label for="lname">Last Name</label><br>
-    <input type="text" id="lname" name="lname"><br><br>
+      <article style="text-align: center; margin-top: 40px;">
+        <img id="profile_picture" src="images/profile_picture.jpg" alt="Me">
+        <h2>Nathan Parr</h2>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01" width="400px" >
+          <div id="caption"></div>
+        </div>
+        <p></p>
+      </article>
+      <article>
+        <h3>Introduction</h3>
+        <p>
+          Hello! I am a recent graduate of Algonquin College, holding a Diploma in Computer Programming, and
+          I am eagerly seeking my inaugural role in Software Development. 
+          Over the past eighteen months, I have diligently balanced both full-time employment and
+          full-time academic commitments. I am now poised to apply the valuable skills
+          and knowledge I have acquired throughout my program.
+        </p>
+
+      </article>
+
+    </section>
     
 
 
-  </form>
-  <br>
+    
+    <section class="bio2">
+      <article class="word_content">
+      
+        <h3></h3>
+        <p>After graduating High School, I began working in a warehouse driving forklift. Picking orders, offloading trailers. Until I accepted a position in the Inventory department handling customer returns. Then after 3 years working in returns, I became the Inventory Analyst. Another 3 years passed doing that role, and I became the Hold and Release / Quality Assurance Analyst.
+        </p>
 
-  <p id="demo" style="text-align: center;"><br></p> 
+      </article>
+      <article>
+        <h1 class="milestone" style="text-align: center; font-size: 40px;">9 Years</h1>
+        <p style="text-align: center; font-size: 20px;">In 3rd Party Logistics</p>
+      </article>
+      
+        
+      
+    </section>
+    <section class="bio1">
+      <article>
+        <h1 style="text-align: center;">Now</h1>
+        <p>
+          My dream is to become a software developer. I enjoy frontend work and hope to see myself start there. If I end up doing backend development that is fine too. I like to learn new things everyday and want to keep learning. I am ready to start a new career.
+          I currently practice my HTML, CSS and JavaScrip with this static website. I am also catching up on my PHP.
+        </p>
+      </article>
+    </section>
 
-  <button onclick="frmTest1()" 
-    style="
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto;"
-    >Submit</button>
+    <section>
+      <article class="word_content"></article>
+        <p style="color: aliceblue; text-align: center; margin: 50px;">
+          On my website you will find some of the projects I have created. 
+          I just recently began this page and continue to make changes.
+        </p>
+      </article>
+
+    </section>
   
-  
-  </section>
   <footer>
     <p id="time"></p>
   </footer>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
   <script src="scripts/cwScript.js"></script>
+  <script src="scripts/index.js"></script>
 </body>
 </html>
