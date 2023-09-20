@@ -81,18 +81,9 @@ function displayRndNum(){
     refreshDisplay();
 }
 
-document.getElementById
-
-
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
   }
 
-let button1 = document.getElementById("button1");
-let x = 0;
-button1.onclick = function() {
-    console.log(x);
-    x++;
-    
-}
+
 
